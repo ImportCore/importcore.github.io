@@ -22,6 +22,12 @@
 .flexi-border {
   border: 1px solid black;
 }
+.flexi-code {
+  user-select: all;
+}
+.colro {
+  background: radial-gradient(circle farthest-corner at right bottom, #CF26AD 0%, #ffa376 28%, #d26578 0%, #682a84 43%, #241668 100%);
+}
 body {
   background-color: gray;
   height: 100%;
@@ -43,6 +49,18 @@ html {
   margin: 0px;
   overflow: hidden;
   user-select: none;
+}
+a {
+  color: black;
+  font-weight: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.default {
+  --primary-color: #009788;
+  --transition-fn1: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .default.common.button {
   display: inline-block;
@@ -138,6 +156,12 @@ html {
 .default.common.button.moon.badge {
   color: #337ab7;
   background-color: #fff;
+}
+.default.form.input.default {
+  touch-action: manipulation;
+  padding: 5px;
+  border-top: 2px solid #ccc;
+  width: 98%;
 }
 /* MaterialDesignIcons.com */
 @font-face {
@@ -7449,6 +7473,17 @@ html {
   }
 }
 
+.crust--box {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.crust--box--vertical {
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 html {
   overflow: hidden;
   height: 100%;
